@@ -2,5 +2,5 @@
 
 ### Branches
 
-- 학습 log: [`learn-webpack`](https://github.com/jmnghn/LearnWebpack/tree/learn-webpack)
-- 학습 개요: [`renewal`](https://github.com/jmnghn/LearnWebpack/tree/renewal)
+- 학습 log: [`learn-webpack`](https://github.com/jmnghn/learn-webpack/tree/learn-webpack)
+- 학습 개요: [`renewal`](https://github.com/jmnghn/learn-webpack/tree/renewal)
