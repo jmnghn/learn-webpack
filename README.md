@@ -217,7 +217,7 @@ sum(10, 20); // 30
 
 <img width="100%" src="https://user-images.githubusercontent.com/19165916/201064263-3ac25eab-3e7d-4d64-b526-425c4941d225.png" /><br />
 
-> `devtool: "source-map"`
+> `webpack.config.js`의 `devtool: "source-map"` 옵션.
 
 <img width="560" src="https://user-images.githubusercontent.com/19165916/201066143-cb0f273b-bfbd-4904-9d5c-663e71882c27.png">
 
