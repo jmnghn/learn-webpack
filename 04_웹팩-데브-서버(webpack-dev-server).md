@@ -81,8 +81,8 @@ npm i webpack webpack-cli webpack-dev-server html-webpack-plugin -D
 (5) 프로젝트 루트 레벨에 `index.js` 파일을 생성하고 아래 내용을 추가한다. <br />
 
 ```js
-const dir = document.querySelector(".container");
-div.innerText = "Wwebpack loaded!!";
+const div = document.querySelector(".container");
+div.innerText = "Webpack loaded!!!";
 ```
 
 (6) 웹팩 설정 파일 `webpack.config.js`를 생성하고 아래 내용을 추가한다.
@@ -100,6 +100,7 @@ module.exports = {
   },
   devServer: {
     port: 9000,
+    // overlay, ... 등등
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -112,3 +113,13 @@ module.exports = {
 
 (7) 명령어 입력 창에 `npm run dev`를 입력하여 웹팩 데브 서버를 실행한다.<br />
 (8) localhost:9000에 접속 후 화면에 'Webpack loaded!!' 문구를 확인한다.
+
+<img width="800" src="https://user-images.githubusercontent.com/19165916/201138258-e58a01c1-7a30-4cc1-b696-b8610c7bbc58.png" /><br />
+<img width="280" src="https://user-images.githubusercontent.com/19165916/201138273-c1c7a639-72ed-4b26-8dd2-44db961a0620.png" /><br />
+
+> 에디터 어디에서도 dist/bundle.js를 찾아볼 수 없지만,<br />
+> 개발자도구 `network`탭에서는 이를 불러오고 있다. (in-memory)
+
+<img width="1162" src="https://user-images.githubusercontent.com/19165916/201140079-0ef92dfe-0a0f-48da-9e4a-a88d0d6bd2f5.png"><br />
+
+> HtmlWebpackPlugin이 `<script>`를 추가한 걸 확인할 수 있다.
